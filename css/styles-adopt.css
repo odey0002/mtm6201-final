@@ -198,6 +198,7 @@ p {
     color: var(--neutral-color);
 }
 
+/* LHFA order */
 .footer-nav a {
     margin: 0 10px;
     color: var(--dark-color);
