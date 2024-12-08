@@ -9,9 +9,8 @@
     --neutral-color: #B8A799;
     --h1-fontsize-desktop: 6rem;
     --h2-fontsize-desktop: 4rem;
-    --h3-fontsize-desktop: 4rem;
+    --h3-fontsize-desktop: 2.5rem;
     --paragraph-fontsize-desktop: 1.6rem;
-    /* --bs-body-bg: transparent; */
 }
 
 body {
@@ -24,7 +23,14 @@ header {
     position: relative;
 }
 
-/* Styling the navbar links using LFHA order */
+.navbar-brand:focus img {
+    outline: 3px solid var(--secondary-color); 
+    outline-offset: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Styling the navbar links using LHFA order */
 .navbar-nav a {
     margin: 0 10px;
     color: var(--dark-color);
@@ -44,7 +50,7 @@ header {
 .navbar-nav a:hover {
     color: var(--dark-color);
     font-weight: 600;
-    border-bottom: 2px solid #262322 ;
+    border-bottom: 2px solid var(--dark-color);
 }
 
 /* Styling the searchbox */
@@ -63,19 +69,11 @@ header {
 .form-control {
     height: 50px;
     background-color: transparent;
-    border: 3px solid #B8A799;
+    border: 3px solid var(--neutral-color);
     color: var(--dark-color);
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
-}
-
-/* Focus state */
-.form-control:focus {
-    background-color: var(--primary-color);
-    box-shadow: none;
-    border-color: var(--accent-color);
-    color: var(--dark-color);
 }
 
 /* Hover state */
@@ -84,12 +82,12 @@ header {
     background-color: var(--primary-color);
 }
 
-/* Disabled state */
-.form-control:disabled {
-    background-color: #f0f0f0;
-    border-color: #ddd; 
-    color: #999; 
-    cursor: not-allowed; 
+/* Focus state */
+.form-control:focus {
+    background-color: var(--primary-color);
+    box-shadow: none;
+    border-color: var(--accent-color);
+    color: var(--dark-color);
 }
 
 /* Icon hover state */
@@ -129,6 +127,12 @@ h1 {
 .btn-hero:hover {
     background-color: var(--hover-color);
     color: var(--primary-color);
+}
+
+.btn-hero:active {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    box-shadow: none;
 }
 
 .hero-img {
@@ -184,7 +188,13 @@ h2 {
     transition: background-color 0.3s ease, outline 0.3s ease;
 }
 
-/* LFHA states */
+/* LHFA states */
+
+.btn-learnmore:hover {
+    background-color: var(--secondary-hover);
+    color: var(--primary-color);
+}
+
 .btn-learnmore:focus {
     background-color: var(--secondary-hover);
     color: var(--primary-color);
@@ -193,7 +203,8 @@ h2 {
     box-shadow: 0 0 5px var(--secondary-color);
 }
 
-.btn-learnmore:hover {
-    background-color: var(--secondary-hover);
+.btn-learnmore:active {
+    background-color: var(--dark-color);
     color: var(--primary-color);
+    box-shadow: none;
 }
