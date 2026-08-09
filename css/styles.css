@@ -24,7 +24,7 @@ header {
 }
 
 .navbar-brand:focus img {
-    outline: 3px solid var(--secondary-color); 
+    outline: 3px solid var(--secondary-color);
     outline-offset: 3px;
     border-radius: 10px;
     box-shadow: 0 0 5px var(--secondary-color);
@@ -41,8 +41,8 @@ header {
 }
 
 .nav-link:focus {
-    color: var(--accent-color); 
-    outline: 3px solid var(--secondary-color); 
+    color: var(--accent-color);
+    outline: 3px solid var(--secondary-color);
     outline-offset: 3px;
     border-radius: 10px;
     box-shadow: 0 0 5px var(--secondary-color);
@@ -56,7 +56,7 @@ header {
 
 .navbar-nav a:active {
     color: var(--primary-color);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* Styling the searchbox */
@@ -98,12 +98,12 @@ header {
 
 /* Icon hover state */
 .input-box i:hover {
-    color: var(--accent-color); 
+    color: var(--accent-color);
 }
 
 /* Icon active state */
 .input-box i:active {
-    color: var(--hover-color); 
+    color: var(--hover-color);
 }
 
 /* styling the H1 and Hero section */
@@ -126,7 +126,7 @@ h1 {
     background-color: var(--hover-color);
     color: var(--primary-color);
     outline: 3px solid var(--secondary-color);
-    outline-offset: 3px; 
+    outline-offset: 3px;
     box-shadow: 0 0 5px var(--secondary-color);
 }
 
@@ -195,7 +195,6 @@ h2 {
 }
 
 /* LHFA states */
-
 .btn-learnmore:hover {
     background-color: var(--secondary-hover);
     color: var(--primary-color);
@@ -205,7 +204,7 @@ h2 {
     background-color: var(--secondary-hover);
     color: var(--primary-color);
     outline: 3px solid var(--secondary-color);
-    outline-offset: 3px; 
+    outline-offset: 3px;
     box-shadow: 0 0 5px var(--secondary-color);
 }
 
@@ -241,8 +240,8 @@ h2 {
 }
 
 .footer-nav a:focus {
-    color: var(--accent-color); 
-    outline: 3px solid var(--secondary-color); 
+    color: var(--accent-color);
+    outline: 3px solid var(--secondary-color);
     outline-offset: 5px;
     border-radius: 10px;
     box-shadow: 0 0 5px var(--secondary-color);
@@ -250,7 +249,7 @@ h2 {
 
 .footer-nav a:active {
     color: var(--primary-color);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .footer-card {
@@ -258,109 +257,83 @@ h2 {
     border-color: var(--dark-color);
 }
 
-
-
-
 /* Media Query for Tablets */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
-
     h2 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
-
     p {
-        font-size: 1.4rem; 
+        font-size: 1.4rem;
     }
-
     .hero-img {
-        height: 600px; 
+        height: 600px;
     }
-
     .btn-hero {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
         padding: 0.5rem 1rem;
     }
-
     .card-img {
-        height: 800px; 
-        width: 100%; 
+        height: 800px;
+        width: 100%;
     }
-    
     .learnmore-container {
         padding: 2rem;
     }
-
     /* Footer */
     .footer-nav a {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
-
     .footer-card {
-        margin: 1rem; 
+        margin: 1rem;
     }
 }
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 576px) {
-   
     .navbar-nav {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
-
     .navbar-nav a {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
-
     h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
-
     .hero-img {
-        height: 400px; 
+        height: 400px;
     }
-
     .btn-hero {
-        font-size: 1rem; 
+        font-size: 1rem;
         padding: 0.4rem 0.8rem;
     }
-
     .card-img {
-        height: 600px; 
+        height: 600px;
     }
-
     .learnmore-container {
-        padding: 1rem; 
+        padding: 1rem;
     }
-
-   
     .text-wrap {
-        width: 100%; 
-        padding: 1rem; 
+        width: 100%;
+        padding: 1rem;
     }
-
     /* Footer */
     .footer-nav {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
-
     .footer-nav a {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
-
     .footer-card {
-        margin: 1rem; 
+        margin: 1rem;
     }
-
     .social-icons i {
         font-size: 1.2rem;
     }
 }
-
-
