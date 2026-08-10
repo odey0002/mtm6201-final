@@ -1,5 +1,367 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Adopt | Pawsitive Futures</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/site.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"><img src="images/logo-pawsitive-futures1.svg" alt="Pawsitive Futures"></a><button class="menu-toggle" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><nav id="site-menu" class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a class="is-current" href="adopt.html">Adopt</a><a href="index.html#ways-to-help">Get involved</a><a href="contact.html">Contact</a></nav><a class="button button-small nav-cta" href="contact.html">Ask a question <span>→</span></a></div></header>
-<main id="main"><section class="page-intro shell"><p class="eyebrow">Meet your match</p><h1>Find a friend for <em>life.</em></h1><p class="lead">Every one of our animals has a big personality and an even bigger heart. Start with the kind of companion you’re looking for.</p></section><section class="shell adopt-area"><div class="filter-row" aria-label="Filter adoptables"><button class="filter is-active" data-filter="all">All friends</button><button class="filter" data-filter="dog">Dogs</button><button class="filter" data-filter="cat">Cats</button><button class="filter" data-filter="rabbit">Rabbits</button></div><p class="result-count" aria-live="polite"><span data-result-count>6</span> friends looking for home</p><div class="pet-grid"><article class="pet-card" data-type="dog"><img src="images/dogs_for_adoption_image_736x981.jpeg" alt="Two dogs together"><div><span class="pet-type">Dog · 2 years</span><h2>Sunny</h2><p>Playful, affectionate, and always ready for an adventure.</p><button class="text-link pet-button" data-pet="Sunny">Meet Sunny <span>→</span></button></div></article><article class="pet-card" data-type="cat"><img src="images/cats_for_adoption_image_3024x4032.jpg" alt="A cat ready for adoption"><div><span class="pet-type">Cat · 3 years</span><h2>Miso</h2><p>A gentle observer with a fondness for sunny windows.</p><button class="text-link pet-button" data-pet="Miso">Meet Miso <span>→</span></button></div></article><article class="pet-card" data-type="rabbit"><img src="images/rabbits_for_adoption_image_3712x5568.jpg" alt="A rabbit ready for adoption"><div><span class="pet-type">Rabbit · 1 year</span><h2>Maple</h2><p>Curious, soft-natured, and full of charming hops.</p><button class="text-link pet-button" data-pet="Maple">Meet Maple <span>→</span></button></div></article><article class="pet-card" data-type="dog"><img src="images/desktop_hero_image_500x500.jpg" alt="A small dog outdoors"><div><span class="pet-type">Dog · 4 years</span><h2>Bowie</h2><p>Easy-going and happiest close to his people.</p><button class="text-link pet-button" data-pet="Bowie">Meet Bowie <span>→</span></button></div></article><article class="pet-card" data-type="cat"><img src="images/adoption_faqs_image_417x626.jpeg" alt="A cat resting"><div><span class="pet-type">Cat · 2 years</span><h2>Pepper</h2><p>A warm cuddle companion with a playful streak.</p><button class="text-link pet-button" data-pet="Pepper">Meet Pepper <span>→</span></button></div></article><article class="pet-card" data-type="rabbit"><img src="images/choosing_image_736x849.jpeg" alt="A rabbit in grass"><div><span class="pet-type">Rabbit · 2 years</span><h2>Clover</h2><p>Calm, sweet, and a fan of fresh greens.</p><button class="text-link pet-button" data-pet="Clover">Meet Clover <span>→</span></button></div></article></div></section><section class="shell adoption-callout"><p class="eyebrow">Not sure where to begin?</p><h2>We’ll help you find the right fit.</h2><a class="button" href="contact.html">Talk to our team <span>→</span></a></section></main>
-<div class="modal" id="pet-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-card"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow">Adoption interest</p><h2 id="modal-title">Meet a new friend</h2><p>Thanks for your interest in <strong data-pet-name>this pet</strong>. Send us a note and our adoption team will get in touch.</p><a class="button" href="contact.html">Contact the team <span>→</span></a></div></div><footer class="site-footer"><div class="shell footer-bottom"><span>© <span data-year></span> Pawsitive Futures</span><a href="index.html">Home</a><a href="contact.html">Contact</a></div></footer><script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Adopt | Pawsitive Futures</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=DynaPuff:wght@400..700&amp;family=Roboto:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link href="css/site.css?v=20260810i" rel="stylesheet">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="index.html">
+          <img alt="" aria-hidden="true" class="brand-logo brand-logo-secondary" src="images/logo-pawsitive-futures2.svg">
+          <img alt="Pawsitive Futures" class="brand-logo brand-logo-primary" src="images/logo-pawsitive-futures1.svg">
+        </a>
+        <button aria-controls="site-menu" aria-expanded="false" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <nav aria-label="Primary navigation" class="site-nav" id="site-menu">
+          <a href="index.html">Home</a>
+          <a class="is-current" href="adopt.html">Adopt</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="adopt.html#resources">Resources</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="button button-small nav-cta" href="contact.html">Ask a question <span>→</span></a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro shell">
+        <p class="eyebrow">Meet your match</p>
+        <h1>Find a friend for <em>life.</em></h1>
+        <p class="lead desktop-copy">
+          Every one of our animals has a big personality and an even bigger heart. Start with the
+          kind of companion you’re looking for.
+        </p>
+        <p class="lead mobile-copy">Find the companion that feels right.</p>
+      </section>
+      <section class="shell adopt-area">
+        <div class="featured-pets-heading">
+          <p class="eyebrow">Featured adoptable pets</p>
+          <h2 class="desktop-copy">Meet some of our friends.</h2>
+          <h2 class="mobile-copy">Some of our friends.</h2>
+          <p class="desktop-copy">
+            These profiles are a featured selection of animals currently looking for homes. Our
+            available pets change regularly, so there may be even more friends waiting to meet you.
+          </p>
+          <p class="mobile-copy">Pets currently looking for homes.</p>
+        </div>
+        <form aria-label="Search featured adoptable animals" class="pet-search" data-pet-search-form="" role="search">
+          <label class="sr-only" for="pet-search">Search adoptable animals</label>
+          <div class="pet-search-field">
+            <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+              <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"></path>
+            </svg>
+            <input autocomplete="off" data-pet-search="" id="pet-search" name="q" placeholder="Search by name or animal type" type="search">
+            <button class="search-clear" data-search-clear="" hidden="" type="button">Clear</button>
+          </div>
+        </form>
+        <div aria-label="Filter adoptables" class="filter-row">
+          <button class="filter is-active" data-filter="all">All friends</button>
+          <button class="filter" data-filter="dog">Dogs</button>
+          <button class="filter" data-filter="cat">Cats</button>
+          <button class="filter" data-filter="rabbit">Rabbits</button>
+        </div>
+        <p aria-live="polite" class="result-count">
+          <span data-result-count="">6</span>
+          <span data-result-label="">featured friends shown</span>
+        </p>
+        <div class="pet-grid">
+          <article class="pet-card" data-type="dog">
+            <img alt="Two dogs together" src="images/adopt-sunny-dog.jpg.png">
+            <div>
+              <span class="pet-type">Dog · 3 years</span>
+              <h2>Sunny</h2>
+              <p>Playful, affectionate, and always ready for an adventure.</p>
+              <button class="text-link pet-button" data-pet="Sunny">Meet Sunny <span>→</span></button>
+            </div>
+          </article>
+          <article class="pet-card" data-type="cat">
+            <img alt="A cat ready for adoption" src="images/adopt-miso-cat.jpg.png">
+            <div>
+              <span class="pet-type">Cat · 2 years</span>
+              <h2>Miso</h2>
+              <p>A gentle observer with a fondness for sunny windows.</p>
+              <button class="text-link pet-button" data-pet="Miso">Meet Miso <span>→</span></button>
+            </div>
+          </article>
+          <article class="pet-card" data-type="rabbit">
+            <img alt="A rabbit ready for adoption" src="images/adopt-maple-rabbit.jpg.png">
+            <div>
+              <span class="pet-type">Rabbit · 8 months</span>
+              <h2>Maple</h2>
+              <p>Curious, soft-natured, and full of charming hops.</p>
+              <button class="text-link pet-button" data-pet="Maple">Meet Maple <span>→</span></button>
+            </div>
+          </article>
+          <article class="pet-card" data-type="dog">
+            <img alt="A small dog outdoors" src="images/adopt-bowie-dog.jpg.png">
+            <div>
+              <span class="pet-type">Dog · 6 months</span>
+              <h2>Bowie</h2>
+              <p>Easy-going and happiest close to his people.</p>
+              <button class="text-link pet-button" data-pet="Bowie">Meet Bowie <span>→</span></button>
+            </div>
+          </article>
+          <article class="pet-card" data-type="cat">
+            <img alt="A cat resting" src="images/adopt-pepper-cat.jpg.jpg">
+            <div>
+              <span class="pet-type">Cat · 2 years</span>
+              <h2>Pepper</h2>
+              <p>A warm cuddle companion with a playful streak.</p>
+              <button class="text-link pet-button" data-pet="Pepper">Meet Pepper <span>→</span></button>
+            </div>
+          </article>
+          <article class="pet-card" data-type="rabbit">
+            <img alt="A rabbit in grass" src="images/adopt-clover-rabbit.jpg.png">
+            <div>
+              <span class="pet-type">Rabbit · 12 months</span>
+              <h2>Clover</h2>
+              <p>Calm, sweet, and a fan of fresh greens.</p>
+              <button class="text-link pet-button" data-pet="Clover">Meet Clover <span>→</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" data-no-results="" hidden="">
+          No featured friends match that search yet. Try another name or animal type.
+        </p>
+        <div class="more-pets-callout">
+          <div>
+            <p class="eyebrow">More pets are waiting</p>
+            <h2>Didn’t find your match yet?</h2>
+            <p>
+              These six profiles are only a featured selection. Our adoption team can help you
+              explore other animals currently in care and find a match that fits your home and
+              lifestyle.
+            </p>
+          </div>
+          <a class="button" href="contact.html#contact-form">Explore more adoptable pets <span>→</span></a>
+        </div>
+      </section>
+      <section class="resources-section" id="resources">
+        <div class="shell">
+          <div class="resource-library-head">
+            <p class="eyebrow">Downloadable resources</p>
+            <h2>Helpful guides for bringing a pet home.</h2>
+            <p>
+              Save these practical guides for before adoption and the first days at home. Each
+              resource is a downloadable PDF you can keep and refer back to when you need it.
+            </p>
+          </div>
+          <div aria-label="Downloadable adoption resources" class="resource-download-grid">
+            <article class="resource-download-card">
+              <span class="resource-format">PDF guide</span>
+              <h3>New Pet Checklist</h3>
+              <p>
+                A simple list of home essentials and pickup-day preparations to help you get ready
+                before your new companion arrives.
+              </p>
+              <a class="resource-download-link" download="" href="resources/new-pet-checklist.pdf">
+                Download PDF
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+                  <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"></path>
+                </svg>
+              </a>
+            </article>
+            <article class="resource-download-card">
+              <span class="resource-format">PDF guide</span>
+              <h3>Preparing Your Home</h3>
+              <p>
+                Create a calmer, safer settling-in space with practical guidance for pet-proofing
+                and preparing everyone in the household.
+              </p>
+              <a class="resource-download-link" download="" href="resources/preparing-your-home.pdf">
+                Download PDF
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+                  <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"></path>
+                </svg>
+              </a>
+            </article>
+            <article class="resource-download-card">
+              <span class="resource-format">PDF guide</span>
+              <h3>First Week After Adoption</h3>
+              <p>
+                A day-by-day overview for keeping the first week calm, building a routine, and
+                helping your new pet adjust at their own pace.
+              </p>
+              <a class="resource-download-link" download="" href="resources/first-week-after-adoption.pdf">
+                Download PDF
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+                  <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"></path>
+                </svg>
+              </a>
+            </article>
+            <article class="resource-download-card">
+              <span class="resource-format">PDF guide</span>
+              <h3>Pet Care Basics</h3>
+              <p>
+                A quick reference for everyday care, enrichment, safety, and the routines that
+                support a healthy home after adoption.
+              </p>
+              <a class="resource-download-link" download="" href="resources/pet-care-basics.pdf">
+                Download PDF
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+                  <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"></path>
+                </svg>
+              </a>
+            </article>
+          </div>
+          <div class="resource-events" id="events-workshops">
+            <div class="resource-events-head">
+              <div>
+                <p class="eyebrow">Events &amp; workshops</p>
+                <h2>Learn, connect, and prepare together.</h2>
+              </div>
+              <p>
+                Join practical sessions and community events created for adopters, foster families,
+                volunteers, and anyone getting ready to welcome a pet.
+              </p>
+            </div>
+            <div class="resource-event-grid">
+              <article class="resource-event-card">
+                <div class="resource-event-meta"><span>Sep 12</span><span>Adoption event</span></div>
+                <h3>Meet &amp; Greet Adoption Day</h3>
+                <p>
+                  Spend time with available pets and speak with our adoption team about temperament,
+                  routines, and finding the right match.
+                </p>
+                <strong>11:00 AM–3:00 PM · Adoption Centre</strong>
+                <a class="text-link" href="contact.html">Ask about this event <span>→</span></a>
+              </article>
+              <article class="resource-event-card">
+                <div class="resource-event-meta"><span>Oct 03</span><span>New adopter workshop</span></div>
+                <h3>Preparing for Your New Pet</h3>
+                <p>
+                  Learn how to set up a safe first space, introduce routines, and make the first few
+                  days less overwhelming for everyone at home.
+                </p>
+                <strong>1:00 PM–2:30 PM · Learning Room</strong>
+                <a class="text-link" href="contact.html">Reserve a spot <span>→</span></a>
+              </article>
+              <article class="resource-event-card">
+                <div class="resource-event-meta"><span>Oct 17</span><span>Foster orientation</span></div>
+                <h3>Fostering 101</h3>
+                <p>
+                  Meet the foster team, understand the support provided, and learn what to expect
+                  when temporarily caring for a rescue animal.
+                </p>
+                <strong>10:30 AM–12:00 PM · Community Room</strong>
+                <a class="text-link" href="contact.html">Register interest <span>→</span></a>
+              </article>
+            </div>
+          </div>
+          <div class="resources-grid faq-resource-grid">
+            <div class="resources-intro">
+              <p class="eyebrow">Adoption FAQs</p>
+              <h2>Questions before you bring them home?</h2>
+              <p>
+                A good match starts with good information. Here are quick answers to some of the
+                questions families ask us most often.
+              </p>
+              <a class="text-link" href="contact.html">Still have a question? <span>→</span></a>
+            </div>
+            <div aria-label="Adoption FAQs" class="faq-list">
+              <details>
+                <summary>What is the adoption process?</summary>
+                <p>
+                  Start by choosing a pet you would like to meet, then contact our adoption team. We
+                  will talk through your home, routine, and what you are looking for before
+                  arranging the next step.
+                </p>
+              </details>
+              <details>
+                <summary>Can I meet a pet before deciding?</summary>
+                <p>
+                  Yes. We want the match to feel right for both you and the animal, so a
+                  meet-and-greet is an important part of the process.
+                </p>
+              </details>
+              <details>
+                <summary>What should I bring when adopting?</summary>
+                <p>
+                  Bring valid identification and any household information our team requested during
+                  your adoption conversation. We will let you know if your chosen pet needs anything
+                  additional.
+                </p>
+              </details>
+              <details>
+                <summary>How do I choose the best match?</summary>
+                <p>
+                  Think about energy level, space, schedule, other pets, and the amount of training
+                  or care you can comfortably provide. Our team can help you compare those needs
+                  with each animal's personality.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shell adoption-callout">
+        <p class="eyebrow">Not sure where to begin?</p>
+        <h2>We’ll help you find the right fit.</h2>
+        <a class="button" href="contact.html">Talk to our team <span>→</span></a>
+      </section>
+    </main>
+    <div aria-hidden="true" aria-labelledby="modal-title" aria-modal="true" class="modal" id="pet-modal" role="dialog">
+      <div class="modal-card">
+        <button aria-label="Close" class="modal-close">×</button>
+        <p class="eyebrow">Adoption interest</p>
+        <h2 id="modal-title">Meet a new friend</h2>
+        <p>
+          Thanks for your interest in
+          <strong data-pet-name="">this pet</strong>
+          . Send us a note and our adoption team will get in touch.
+        </p>
+        <a class="button" href="contact.html">Contact the team <span>→</span></a>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="shell footer-brand-block">
+        <a aria-label="Pawsitive Futures home" class="brand footer-brand" href="index.html">
+          <img alt="" aria-hidden="true" class="brand-logo brand-logo-secondary" src="images/logo-pawsitive-futures2.svg">
+          <img alt="Pawsitive Futures" class="brand-logo brand-logo-primary" src="images/logo-pawsitive-futures1.svg">
+        </a>
+        <p class="footer-brand-tagline">Changing lives, one paw at a time.</p>
+      </div>
+      <div class="shell footer-bottom">
+        <span class="footer-copyright">© <span data-year=""></span> Pawsitive Futures</span>
+        <nav aria-label="Footer navigation" class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="adopt.html">Adopt</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="adopt.html#resources">Resources</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div aria-label="Social media" class="social-links">
+          <a aria-label="Instagram" href="#" title="Instagram">
+            <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z">
+              </path>
+            </svg>
+          </a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/esther-odeyemi-profile/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+            <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+              <path d="M5.25 3A2.25 2.25 0 1 1 5.25 7.5 2.25 2.25 0 0 1 5.25 3ZM3.5 9h3.5v11.5H3.5V9Zm5.75 0h3.35v1.57h.05c.47-.88 1.6-1.82 3.3-1.82 3.53 0 4.18 2.32 4.18 5.34v6.41h-3.49v-5.68c0-1.36-.02-3.1-1.89-3.1-1.89 0-2.18 1.48-2.18 3v5.78H9.25V9Z">
+              </path>
+            </svg>
+          </a>
+          <a aria-label="WhatsApp" href="#" title="WhatsApp">
+            <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24">
+              <path d="M12.05 2a9.85 9.85 0 0 0-8.43 14.94L2 22l5.2-1.57A9.95 9.95 0 1 0 12.05 2Zm0 17.9a8 8 0 0 1-4.08-1.12l-.29-.17-3.09.93.96-3-.19-.3A7.84 7.84 0 0 1 4.12 12a7.93 7.93 0 1 1 7.93 7.9Zm4.35-5.94c-.24-.12-1.41-.69-1.63-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.76.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.47-.39-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.58 4.09 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
