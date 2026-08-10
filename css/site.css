@@ -71,7 +71,7 @@ textarea {
   gap: 28px;
 }
 
-/* Logo sizing: change this width to resize both layered logo files. */
+/* Logo sizing: width to resize both layered logo files */
 .brand {
   position: relative;
   display: block;
@@ -793,7 +793,8 @@ textarea {
   .site-header {
     padding: 15px 0;
   }
-  /* Mobile logo sizing: change this width for small screens. */
+
+  /* Mobile logo sizing: width for small screens */
   .brand {
     width: 122px;
   }
@@ -1997,14 +1998,11 @@ textarea {
   }
 }
 
-/* 2026-08 consistency and alignment pass */
-
-/* Card eyebrow labels use the same Cambridge blue accent as other role labels. */
 .fit-card .eyebrow {
   color: var(--cambridge-blue);
 }
 
-/* Unified footer structure across every primary page. */
+/* Unified footer structure */
 .site-footer {
   padding: 52px 0 26px;
 }
@@ -2099,13 +2097,10 @@ textarea {
   }
 }
 
-
-/* Responsive copy: keep shorter supporting text only on narrow mobile screens. */
 .mobile-copy {
   display: none;
 }
 
-/* 2026-08 mobile spacing and overflow fixes */
 @media (max-width: 530px) {
   .desktop-copy {
     display: none;
@@ -2115,7 +2110,6 @@ textarea {
     display: block;
   }
 
-  /* Give the warm-taupe sections clear breathing room after their final divider. */
   .feature-shell {
     padding-bottom: 110px;
   }
@@ -2124,7 +2118,6 @@ textarea {
     padding-bottom: 110px;
   }
 
-  /* Keep all adoption filters fully visible on narrow screens. */
   .filter-row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2139,12 +2132,10 @@ textarea {
     padding: 12px 14px;
   }
 
-  /* Separate the Get Involved form from the footer with a clear ivory gap. */
   .interest-section {
     padding-bottom: 145px;
   }
 
-  /* Use one consistent vertical rhythm around every Contact divider. */
   .contact-details {
     padding: 0;
   }
@@ -2154,9 +2145,7 @@ textarea {
   }
 }
 
-/* 2026-08 tablet consistency pass */
 @media (min-width: 531px) and (max-width: 960px) {
-  /* Keep section endings from feeling clipped on medium screens. */
   .feature-shell {
     padding-bottom: 90px;
   }
@@ -2165,23 +2154,19 @@ textarea {
     padding-bottom: 95px;
   }
 
-  /* Keep the adoption controls visible without forcing a cramped row. */
   .filter-row {
     flex-wrap: wrap;
     overflow: visible;
   }
 
-  /* Two pet cards read more comfortably than three on portrait tablets. */
   .pet-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Give the involvement form a clear ending before the footer. */
   .interest-section {
     padding-bottom: 110px;
   }
 
-  /* Maintain the same divider rhythm used on mobile contact details. */
   .contact-details {
     padding: 0;
   }
@@ -2192,7 +2177,6 @@ textarea {
 }
 
 @media (min-width: 531px) and (max-width: 900px) {
-  /* Avoid narrow split layouts on portrait and smaller landscape tablets. */
   .contact-grid,
   .involve-hero,
   .foster-grid,
@@ -2243,14 +2227,12 @@ textarea {
   }
 }
 
-/* 2026-08 mobile Contact form separation */
 @media (max-width: 530px) {
   .contact-grid {
     row-gap: 48px;
   }
 }
 
-/* 2026-08 match mobile section-ending spacing on Get Involved */
 @media (max-width: 530px) {
   .volunteer-process {
     padding-bottom: 48px;
